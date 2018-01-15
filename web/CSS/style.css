@@ -1,0 +1,110 @@
+/* ------- Menu et header ------- */
+#header{
+    position: relative;
+    border-bottom: 1px solid grey;
+    -moz-box-shadow: 0px 1px 5px #656565;
+    -webkit-box-shadow: 0px 1px 5px #656565;
+    -o-box-shadow: 0px 1px 5px #656565;
+    box-shadow: 0px 1px 5px #656565;
+    height : 75px;
+    line-height: 75px;
+    display: inline-block;
+    width: 100%;
+    background-color: #00BFFF;
+}
+#header h1 {
+    display: inline;
+    color : #FFFFFF;
+    margin-left: 15px;
+}
+nav {
+    float:right;
+    margin-right: 100px;
+}
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 14px 30px;
+}
+nav ul li a:focus {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover {
+    border-bottom: 5px solid #00BFFF;
+}
+
+
+/* --------- Les containers ------------- */
+.mycontainer {
+    width: 80%;
+    margin: auto;
+    margin-top : 15px;
+    background-color: rgba(0, 191, 255, 0.1);
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.mycontainer h3 {
+    margin-left: 25px;
+    font-size: 25px;
+
+}
+
+#comptes_rendus {
+    margin-left: 15px;
+    padding-top: 15px;
+    width: 90%;
+}
+#presentation {
+    margin-left: 15px;
+    padding-top: 15px;
+    width: 90%;
+    text-align: justify;
+}
+
+
+/* ---------- Partie PMP ----------------*/
+#pmp {
+    height: 500px;
+}
+
+#pmp h2 {
+
+    padding:15px;
+}
+#partie_gauche {
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+}
+
+#partie_gauche ul {
+    background-color: #00BFFF;
+    padding-bottom: 10px;
+}
+
+#partie_gauche ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+}
+
+#partie_gauche ul li a {
+    color: white;
+    text-decoration:none;
+}
+#partie_droite {
+    width: 65%;
+    float:right;
+    margin-right: 5%;
+}

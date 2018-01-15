@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<div class="mycontainer">
+		<div id="presentation">
+			<h2>Présentation du Projet</h2>
+
+			<h3>Réalisation d’un simulateur pour la navigation autonome d’un robot mobile dans un environnement aéroportuaire</h3>
+
+			<p><b>Contexte :</b></p>
+			<p>L’inspection automatisée d’un avion sur le tarmac (inspection pré-vol) ou en hangar (maintenance) fait actuellement l’objet de nombreux développements et projets industriels. Pour répondre à ce problème, le robot doit être capable de se déplacer sans collision dans l'aéroport en général et autour de l'avion en particulier, en rejoignant chaque point de vérification (ou checkpoint). Ce type d'environnement est naturellement très contraint, et le robot aura à éviter des obstacles statiques réels (tuyaux, véhicule arrêté pour chargement/déchargement des bagages par exemple) ou non (zones interdites) et des obstacles dynamiques (personnel au sol, véhicules en déplacement, ...). Afin de pouvoir améliorer les stratégies de navigation actuellement à disposition, il est nécessaire de disposer d’un simulateur fidèle de l’environnement.</p>
+
+			<p><b>Description détaillée :</b></p>
+			<p>L’objectif de ce travail est de concevoir un environnement virtuel animé simulant l'activité autour des avions de ligne sur un tarmac d'aéroport, notamment lorsque ceux-ci sont en phase de "turn around". Plus précisément, il s’agira d’utiliser des outils open source adaptés à la robotique (principalement le simulateur Gazebo, puis le middleware ROS (Robot Operating System)), pour :</p> 
+			<p>-	Proposer un scénario d'activité autour d'un avion faisant intervenir des événements déterministes et aléatoires, ainsi que des obstacles statiques et dynamiques.</p>
+			<p>-	Intégrer les modèles 3D de différents éléments retenus dans le simulateur. Certains de ces modèles pourront être fournis (avion, robot).</p>
+			<p>-	Développer des modules pour déplacer les agents mobiles (personnel humain, véhicules, robots) sur des trajectoires ou des points de passage.</p>
+			<p>-	Introduire des événements aléatoires dans le scénario (apparition d'obstacles, aléas des trajectoires et des positions de certains éléments).</p>
+			<p>-	Développer un module enregistrant les paramètres de chaque exécution pour pouvoir, si besoin, rejouer une simulation en conservant les mêmes événements aléatoires.</p>
+		</div>
+	</div>
+       
+{% endblock %}
