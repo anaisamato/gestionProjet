@@ -63,23 +63,19 @@ class ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2
         'F' => 
         array (
             'Fig\\Link\\' => 9,
-            'FOS\\UserBundle\\' => 15,
         ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\' => 16,
+            'Doctrine\\Bundle\\FixturesBundle\\' => 31,
             'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
         'C' => 
         array (
             'Composer\\CaBundle\\' => 18,
-        ),
-        'A' => 
-        array (
-            'AppBundle\\' => 10,
         ),
     );
 
@@ -192,10 +188,6 @@ class ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
-        'FOS\\UserBundle\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/friendsofsymfony/user-bundle',
-        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -207,6 +199,10 @@ class ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+        'Doctrine\\Bundle\\FixturesBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-fixtures-bundle',
         ),
         'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 
         array (
@@ -220,10 +216,10 @@ class ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2
         array (
             0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
         ),
-        'AppBundle\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/AppBundle',
-        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -259,6 +255,10 @@ class ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2
             array (
                 0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
             ),
+            'Doctrine\\Common\\DataFixtures' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/data-fixtures/lib',
+            ),
             'Doctrine\\Common\\Collections\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
@@ -292,6 +292,7 @@ class ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitbd9db6ebf1d66d73a72b9eca55197aa2::$classMap;
 
